@@ -1,18 +1,74 @@
 <html lang="zh_cn">
-	<!--#include virtual="/ssi/head.shtml"-->
+	<div class="header">
+	<div class="h-logo">
+		<div class="h-logo-name"><span ><a href="https://aimql.cn" ><b>AIMQL</b></a></span></div>
+		<div class="h-logo-index"><span ><a href="https://aimql.cn" ></a></span></div>
+	</div>
+	
+	<div class="h-left"><a href="https://aimql.cn"></a></div>					
+		
+	<div class="h-right" id="links">
+		<div><span id="more"><a href="#">MORE<a></span></div>
+		
+		<div id="more-list" onmouseover="display()" onmouseout="disappear()">
+			<div  class="tips">
+				<div class="tips_1">
+					<dl>
+						<dd ><a href="https://aimql.cn/pages/function.html"   title="function" ><span class="tips-title">常用函数说明</span></a></dd>
+						<dd ><a href="https://aimql.cn/pages/mt4error.html"   title="mt4error" ><span class="tips-title">错误代码释义(mt4error)</span></a></dd>
+						<dd ><a href="https://aimql.cn/pages/mt5error.html"   title="mt5error" ><span class="tips-title">错误代码释义(mt5error)</span></a></dd>
+						<dd ><a href="https://aimql.cn/pages/daily.html"   title="daily" ><span class="tips-title">财经日历</span></a></dd>
+						<dd ><a href="https://aimql.cn/images/banner/pay.png"   title="pay" target="_blank"><span class="tips-title">二维码</span></a></dd>
+					</dl>
+				</div>
+				<div id="up"><a></a></div>
+			</div>
+		</div>
+	</div> 
+</div>
 	<title>首页 - aimql.cn</title>	
+	<style>
+.h-logo,.h-left,.h-right{height:60px;line-height:60px;}
+/**********header**********/
+.header{min-width:270px;max-width:998px;margin:auto;display:flex;justify-content:space-between;}
+.h-logo-name{width:70px;float:left;}
+.h-logo-index{width:70px;float:left;}
+.h-logo-name a,.h-logo-index a,.h-right a{display: block;}
+.h-left{padding: 0 15px;text-align:center;}
+.h-right{min-width:120px;padding:0px;text-align:right;background: url(/images/banner/arrow.png) no-repeat right;}
+
+#more{font-family:Arial;display:block;font-weight:500;font-size:12px;letter-spacing:0px;color:#333;padding-right:10px;}
+#more-list{overflow:visible;display:none;width:100%;box-shadow:0 1px 3px 1px rgba(0,0,0,0.05);
+position:absolute;top:60px;right:0px;background:rgba(255,255,255,0.98);}
+
+.tips{padding:22px 0 0 0;max-width:998px;margin:auto;overflow:hidden;text-align:right;}
+.tips  a:hover{font-weight:thin;background:#fbf9f5 url(/images/banner/r-arrow.png) no-repeat  left;}
+.tips dd{line-height:36px;height:36px;text-align:center;display:block;border-bottom: 0px dashed #eee;text-align:left;background: url(/images/banner/r-arrow.png) no-repeat  left;}
+.tips_1{width:100%;font-size:14px;}
+.tips-title{padding-left:10px;}
+#up{width:100%;height:36px;}
+
+
+@media screen and (max-width: 640px) {
+.h-logo,.h-left{padding:0 5px;}
+.h-right{margin-right:5px;}
+.h-right{max-width:75px;min-width:75px;}
+#more-list{padding:0 5px;}
+#up{background: url(/images/banner/up.png) no-repeat  center;}
+}
+</style>
 <style>
 .part{max-width:998px; margin:auto;display:flex;justify-content: space-between;}
 
 #page1{width:100%;min-width:300px;background-color:#32375f;padding:0px 0 0px 0;}
 #page1-box{max-width:998px; margin:auto;background: url(/images/banner/point.png) no-repeat right;}
-#page1-title{min-width:300px;max-width:600px;padding:40px 0 36px 0;color:#fff;font-size:22px;line-height:22px;font-weight:bold;text-align:left;}
-#page1-c1{color:#fff;padding-bottom:30px;font-size:14px;line-height:22px;}
+#page1-title{width:100%;min-width:300px;max-width:600px;padding:80px 0 35px 0;color:#fff;font-size:22px;line-height:22px;font-weight:bold;text-align:left;}
+#page1-c1{color:#fff;padding-bottom:75px;font-size:14px;line-height:22px;}
 
 
-#page2{width:100%;min-width:300px;background-color:#ebf4f7;padding:40px 0 40px 0;}
+#page2{width:100%;min-width:300px;background-color:#ebf4f7;padding:80px 0 75px 0;}
 #page2-box{max-width:998px; margin:auto;}
-#page2-title{min-width:300px;max-width:600px;font-size:18px;line-height:18px;font-weight:bold;text-align:left;}
+#page2-title{width:100%;min-width:300px;max-width:600px;font-size:18px;line-height:18px;font-weight:bold;text-align:left;}
 #page2-c1{padding-bottom:0px;}
 
 #page3{width:100%;min-width:300px;min-height:200px;padding:40px 0 40px 0;}
@@ -54,9 +110,9 @@
 					<div class="part" >
 						<div id="page2-c1">
 							<dl>						
-								<dd>&bull;&nbsp;<a href="/pages/mt4error.html"   title="mt4error" target="_blank">错误代码释义(mt4error)</a></dd>
-								<dd>&bull;&nbsp;<a href="/pages/mt5error.html"   title="mt5error" target="_blank">错误代码释义(mt5error)</a></dd>
-								<dd>&bull;&nbsp;<a href="/pages/function.html"   title="常用函数" target="_blank">mql常用函数说明</a></dd>
+								<dd>&bull;&nbsp;<a href="https://aimql.cn/pages/mt4error.html"   title="mt4error" target="_blank">错误代码释义(mt4error)</a></dd>
+								<dd>&bull;&nbsp;<a href="https://aimql.cn/pages/mt5error.html"   title="mt5error" target="_blank">错误代码释义(mt5error)</a></dd>
+								<dd>&bull;&nbsp;<a href="https://aimql.cn/pages/function.html"   title="常用函数" target="_blank">mql常用函数说明</a></dd>
 							</dl>
 						</div>					
 					</div>
@@ -68,7 +124,7 @@
 					<div class="part" >
 						<div id="page3-c1">
 							<dl>						
-
+								
 							</dl>
 						</div>					
 					</div>
