@@ -1,31 +1,14 @@
 <html lang="zh_cn">
-	<div class="header">
-	<div class="h-logo">
-		<div class="h-logo-name"><span ><a href="https://aimql.cn" ><b>AIMQL</b></a></span></div>
-		<div class="h-logo-index"><span ><a href="https://aimql.cn" ></a></span></div>
-	</div>
-	
-	<div class="h-left"><a href="https://aimql.cn"></a></div>					
-		
-	<div class="h-right" id="links">
-		<div><span id="more"><a href="#">MORE<a></span></div>
-		
-		<div id="more-list" onmouseover="display()" onmouseout="disappear()">
-			<div  class="tips">
-				<div class="tips_1">
-					<dl>
-						<dd ><a href="https://aimql.cn/pages/function.html"   title="function" ><span class="tips-title">常用函数说明</span></a></dd>
-						<dd ><a href="https://aimql.cn/pages/mt4error.html"   title="mt4error" ><span class="tips-title">错误代码释义(mt4error)</span></a></dd>
-						<dd ><a href="https://aimql.cn/pages/mt5error.html"   title="mt5error" ><span class="tips-title">错误代码释义(mt5error)</span></a></dd>
-						<dd ><a href="https://aimql.cn/pages/daily.html"   title="daily" ><span class="tips-title">财经日历</span></a></dd>
-						<dd ><a href="https://aimql.cn/images/banner/pay.png"   title="pay" target="_blank"><span class="tips-title">二维码</span></a></dd>
-					</dl>
-				</div>
-				<div id="up"><a></a></div>
-			</div>
-		</div>
-	</div> 
-</div>
+	<head>	
+	<meta name="keywords" content="智能交易,外汇,期货,黄金,白银,原油,数字货币">
+	<meta name="Description" Content="智能交易,提高投资效率.">	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="renderer" content="webkit">						
+	<link rel="shortcut icon" href="/images/logo/favicon.ico">
+	<link href="/css/global.css" rel="stylesheet" type="text/css">	
+	</head>
+
 	<title>首页 - aimql.cn</title>	
 	<style>
 .h-logo,.h-left,.h-right{height:60px;line-height:60px;}
@@ -81,9 +64,45 @@ position:absolute;top:60px;right:0px;background:rgba(255,255,255,0.98);}
 #page1-c1 dd{padding-bottom:10px;}
 }
 </style>
+
+<script type="text/javascript">
+window.onload=function(){
+document.getElementById("links").onmouseover=function(){document.getElementById("more-list").style.display="block";}
+document.getElementById("links").onmouseout=function(){document.getElementById("more-list").style.display="none";}
+document.getElementById("up").onclick=function(){document.getElementById("more-list").style.display="none";}
+}
+</script>
 <body>
 
-	<div class="m-header"><!--#include virtual="ssi/header.shtml"--></div>
+	<div class="m-header">	
+		<div class="header">
+		<div class="h-logo">
+			<div class="h-logo-name"><span ><a href="https://aimql.cn" ><b>AIMQL</b></a></span></div>
+			<div class="h-logo-index"><span ><a href="https://aimql.cn" ></a></span></div>
+		</div>
+		
+		<div class="h-left"><a href="https://aimql.cn"></a></div>					
+			
+		<div class="h-right" id="links">
+			<div><span id="more"><a href="#">MORE<a></span></div>
+			
+			<div id="more-list" onmouseover="display()" onmouseout="disappear()">
+				<div  class="tips">
+					<div class="tips_1">
+						<dl>
+							<dd ><a href="https://aimql.cn/pages/function.html"   title="function" ><span class="tips-title">常用函数说明</span></a></dd>
+							<dd ><a href="https://aimql.cn/pages/mt4error.html"   title="mt4error" ><span class="tips-title">错误代码释义(mt4error)</span></a></dd>
+							<dd ><a href="https://aimql.cn/pages/mt5error.html"   title="mt5error" ><span class="tips-title">错误代码释义(mt5error)</span></a></dd>
+							<dd ><a href="https://aimql.cn/pages/daily.html"   title="daily" ><span class="tips-title">财经日历</span></a></dd>
+							<dd ><a href="https://aimql.cn/images/banner/pay.png"   title="pay" target="_blank"><span class="tips-title">二维码</span></a></dd>
+						</dl>
+					</div>
+					<div id="up"><a></a></div>
+				</div>
+			</div>
+		</div> 
+		</div>
+	</div>
 
 	<div class="m-body">	
 		<div id="page-index">
