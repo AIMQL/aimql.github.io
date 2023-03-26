@@ -64,7 +64,20 @@ position:absolute;top:60px;right:0px;background:rgba(255,255,255,0.98);}
 #page1-c1 dd{padding-bottom:10px;}
 }
 </style>
+<style>
+#f1-box{max-width:998px;margin:auto;padding:20px 0;font-size:12px;display:flex;justify-content: space-between;}
+#f1-box a:link, #f1-box a:visited , #f1-box a:active,#f1-box a:hover{text-decoration: none;color: #999;}
 
+#f1-copy{min-width:270px;text-align:left;}
+#f1-logo img {height:12px;}
+#f1-logo{min-width:270px;text-align:right;}
+
+@media screen and (max-width: 640px) {
+#f1-box{display: block;padding:0 5px;font-size:14px;}
+#f1-copy{margin:10px;text-align:center;}
+#f1-logo{margin:10px;text-align:center;}
+}
+</style>
 <script type="text/javascript">
 window.onload=function(){
 document.getElementById("links").onmouseover=function(){document.getElementById("more-list").style.display="block";}
@@ -151,7 +164,22 @@ document.getElementById("up").onclick=function(){document.getElementById("more-l
 			</div>
 		</div><!--page-index-->
 	</div><!--m-body-->
-	<div class="m-footer"><!--#include virtual="ssi/footer.shtml"--></div>
+	<div class="m-footer">
+	<div id="f1-box">
+		<div id="f1-copy">
+			<div >
+			<a href="https://aimql.cn">智能交易&nbsp;&copy;&nbsp;2016-2023&nbsp;AIMQL.COM</span></a>
+			</div>													
+		</div>
+		
+		<div id="f1-logo">
+			<div>
+			<a href="https://aimql.cn">AIMQL</a>
+			</div>					
+		</div>
+</div>
+	
+	</div>
 </body>
 </html>
 
