@@ -12,27 +12,38 @@
 	<title>AIMQL.</title>	
 
 <style>
-.part{max-width:998px; margin:auto;display:flex;justify-content: space-between;}
+.part{width:100%;min-width:330px;}
+.page-index{}
 
-#page1{width:100%;min-width:300px;background-color:#32375f;padding:0px 0 0px 0;}
-#page1-box{max-width:998px; margin:auto;background: url(/images/banner/point.png) no-repeat right;}
-#page1-title{width:100%;min-width:300px;max-width:600px;padding:60px 0 55px 0;color:#fff;font-size:22px;line-height:22px;font-weight:bold;text-align:left;}
-#page1-c1{color:#fff;padding-bottom:55px;font-size:14px;line-height:22px;}
+#page1{width:100%;background-color:#fff;padding:0px 0 0px 0;}
+#page1-bg{max-width:998px; margin:auto;background: url(/images/banner/point.png) no-repeat right;}
+#page1-h1{width:100%;padding:90px 0 85px 0;font-size:22px;line-height:22px;font-weight:700;text-align:left;}
+#page1-c1{padding-bottom:85px;font-size:14px;overflow: hidden;}
 
+#page2{width:100%;background-color:#000;padding:90px 0 90px 0;}
+#page2-bg{max-width:998px;margin:auto;}
+#page2-c1{margin: auto;display:flex;justify-content:space-between;overflow: hidden;}
 
-#page2{width:100%;min-width:300px;background-color:#ebf4f7;padding:80px 0 75px 0;}
-#page2-box{max-width:998px; margin:auto;}
-#page2-title{width:100%;min-width:300px;max-width:600px;font-size:18px;line-height:18px;font-weight:bold;text-align:left;}
-#page2-c1{padding-bottom:0px;}
+.page2-c1-box{width:230px;padding:0px;background-color:#fff;border-radius:1px;}
+.page2-c1-box img{width:220px;height:165px;padding:5px;border-radius:5px;}
+/*.page2-c1-img:hover{top:-20px;box-shadow:5px 5px 5px rgba(0,0,0,0.25);cursor:pointer;}*/
+.page2-c1-con{padding:10px 5px 15px 5px;}
+.page2-c1-con dt{border-bottom: 1px dashed #ddd;padding-left:10px;padding-bottom:15px;margin-bottom:15px;font-weight: 700;}
+.page2-c1-con dd{font-size:14px;}
+.block{padding-right:10px;background: url(/images/banner/block-r.png) no-repeat  left;}
+.page2-c1-con dd{padding-left:10px;}
 
-#page3{width:100%;min-width:300px;min-height:200px;padding:40px 0 40px 0;}
-#page3-box{max-width:998px;margin:auto;}
-#page3-title{min-width:300px;max-width:600px;padding-bottom:0px;color:#fff;font-size:18px;line-height:18px;text-align:left;}
-#page3-c1{padding-bottom:0px;}
+#page3{width:100%;background-color:#FAFBFC;padding:90px 0 90px 0;}
+#page3-bg{max-width:998px;margin:auto;}
+
 
 @media screen and (max-width: 640px) {
 .part{display:block;padding:0 5px;}
 #page1-c1 dd{padding-bottom:10px;}
+#page2-c1{display:block;}
+.page2-c1-box{float:left;clear:both;}
+.page2-c1-box{margin-top:15px;}
+#page1-bg{background: url(/images/banner/point.png) no-repeat center;}
 }
 </style>
 
@@ -58,71 +69,175 @@
 	<div class="m-body">	
 		<div id="page-index">
 			<div id="page1">
-				<div id="page1-box">
+				<div id="page1-bg">
 					<div class="part" >
-						<div id="page1-title"><b>智能交易策略编写</b></div>
+						<div id="page1-h1" ><span class="h-black">智能交易策略编写</span></div>
 					</div>
 
 					<div class="part" >
 						<div id="page1-c1">
 							<dl>						
-								<dd><交易策略>是理论与实践结合的产物, 应认真总结, 严谨科学, 反复求证.</dd>
+								<dd><交易策略>是理论与实践结合的产物, 应认真总结, 反复求证, 严谨科学.</dd>
 								<dd><交易系统>是系统交易思维的物化，是交易相关要素有机统一的体现.</dd>
 								<dd><需求文档>是必须的. 应认真梳理总结, 编写需求文档以提高开发效率.</dd>
-								<dd>&nbsp;&nbsp;微&nbsp;:&nbsp;Q168107365</dd>
+						<dd>&nbsp;&nbsp;Q<span style="padding-left:3px;">&nbsp;:&nbsp;&nbsp;168107365&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <span>群&nbsp;&nbsp;:&nbsp;&nbsp;1107021071</span></dd>
+						<dd></dd>	
 							</dl>
 						</div>					
 					</div>
 				</div>
-			</div>
-			
+			</div><!--page1-->
+									
 			<div id="page2">
-				<div id="page2-box">
+				<div id="page2-bg">
 					<div class="part" >
 						<div id="page2-c1">
-							<dl>						
-								<dd>&bull;&nbsp;<a href="https://aimql.cn/pages/mt4error.html"   title="mt4error" target="_blank">错误代码释义(mt4error)</a></dd>
-								<dd>&bull;&nbsp;<a href="https://aimql.cn/pages/mt5error.html"   title="mt5error" target="_blank">错误代码释义(mt5error)</a></dd>
-								<dd>&bull;&nbsp;<a href="https://aimql.cn/pages/function.html"   title="常用函数" target="_blank">mql常用函数说明</a></dd>
-							</dl>
-						</div>					
-					</div>
+							<div class="page2-c1-box">
+								<div class="page2-c1-img"><img border="0" src="/images/banner/img_1.jpg"  alt="" title="" /></div>
+								<div class="page2-c1-con">
+									<div>
+										<dl>
+											<dt class="h-red">程序编写&nbsp;&nbsp;Editor</dt>
+											<dd>>&nbsp;&nbsp;<a href="/download/MetaTrader 4.zip">MetaTrader 4</a></dd>
+											<dd>>&nbsp;&nbsp;<a href="/download/mql4_new.chm">Mql4参考文档</a></dd>
+											<dd>>&nbsp;&nbsp;<a href="/download/mt5setup.exe">MetaTrader 5</a></dd>											
+											<dd>>&nbsp;&nbsp;<a href="/download/mql5_chinese.chm">Mql5参考文档</a></dd>
+											<dd> </dd>		
+										</dl>	
+									</div>		
+								</div>	
+							</div>
+							<div class="page2-c1-box">
+								<div class="page2-c1-img"><img border="0" src="/images/banner/img_2.jpg"  alt="" title="" /></div>
+								<div class="page2-c1-con">
+									<div>
+										<dl>
+											<dt class="h-red">EA交易&nbsp;&nbsp;Experts</dt>
+											<dd>>&nbsp;&nbsp;<a href="/download/ea一键下单面板.ex4">一键下单面板</a></dd>
+											<dd> </dd>											
+										</dl>	
+									</div>		
+								</div>	
+							</div>
+							<div class="page2-c1-box">
+								<div class="page2-c1-img"><img border="0" src="/images/banner/img_3.jpg"  alt="" title="" /></div>
+								<div class="page2-c1-con">
+									<div>
+										<dl>
+											<dt class="h-red">指标&nbsp;&nbsp;Indicators</dt>
+											<dd>>&nbsp;&nbsp;<a href="/download/in历史成交轨迹.ex4">历史成交轨迹</a></dd>
+											<dd>>&nbsp;&nbsp;<a href="/download/in品种快捷切换.ex4">品种快捷切换</a></dd>
+											<dd>>&nbsp;&nbsp;<a href="/download/in盈亏统计指标5.06.ex4">盈亏统计指标</a></dd>											
+											<dd>>&nbsp;&nbsp;<a href="/download/inMACD.ex4">双线MACD</a></dd>
+											<dd>>&nbsp;&nbsp;<a href="/download/inKDJ.ex4">三线KDJ</a></dd>
+											<dd>>&nbsp;&nbsp;<a href="/download/inRSI.ex4">三线RSI</a></dd>
+											<dd> </dd>
+										</dl>	
+									</div>		
+								</div>	
+							</div>
+							<div class="page2-c1-box">
+								<div class="page2-c1-img"><img border="0" src="/images/banner/img_4.jpg" class="img3" alt="" title="" /></div>
+								<div class="page2-c1-con">
+									<div>
+										<dl>
+											<dt class="h-red">脚本&nbsp;&nbsp;Scripts</dt>
+											<dd>>&nbsp;&nbsp;<a href="/download/sc统一模板.ex4">统一窗口模板</a></dd>
+											<dd>>&nbsp;&nbsp;<a href="/download/sc统一窗口品种与周期.ex4">统一窗口品种与周期</a></dd>											
+											<dd>>&nbsp;&nbsp;<a href="/download/sc对象全删.ex4">对象全删</a></dd>
+											<dd> </dd>
+										</dl>	
+									</div>		
+								</div>	
+							</div>
+
+							
+
+						</div>
+					</div>					
 				</div>
-			</div>
+			</div><!--page2-->
+				
 			
-			<div id="page3">
-				<div id="page3-box">
-					<div class="part" >
-						<div id="page3-c1">
-							<dl>						
-								
-							</dl>
-						</div>					
-					</div>
-				</div>
-			</div>
 		</div><!--page-index-->
 	</div><!--m-body-->
-	<style>
-	#f1-box{max-width:998px;margin:auto;padding:20px 0;font-size:12px;display:flex;justify-content: space-between;}
-	#f1-box a:link, #f1-box a:visited , #f1-box a:active,#f1-box a:hover{text-decoration: none;color: #888;}
 
-	#f1-copy{min-width:270px;text-align:left;}
-	#f1-logo img {height:14px;}
-	#f1-logo{min-width:270px;text-align:right;}
+<div class="m-footer">
+<style>
+#f0-box{min-width:270px;max-width:998px;line-height:24px;margin:auto;padding:20px 0;display:flex;justify-content:space-between;}
+#f0-box dt{padding-top:64px;}
 
-	@media screen and (max-width: 640px) {
-	#f1-box{display: block;padding:0 5px;font-size:14px;}
-	#f1-copy{margin:10px;text-align:center;}
-	#f1-logo{margin:10px;text-align:center;}
-	}
-	</style>
-	<div class="m-footer">
-		<div id="f1-box">
-			<div id="f1-copy"><div ><a href="https://aimql.cn">智能交易&nbsp;&copy;&nbsp;2016-2023&nbsp;AIMQL.COM</span></a></div></div>
-			<div id="f1-logo"><div><a href="/"><img border="0" height="14" src="/images/logo/logo.svg"/></a></div></div>
+
+#f1-box{min-width:270px;max-width:998px;margin:auto;padding:20px 0;margin-bottom:66px;display:flex;justify-content:space-between;border-top: 1px solid #fff;}
+
+#f1-copy{min-width:270px;text-align:left;height:20px;line-height:20px;            }
+
+#f1-logo{min-width:270px;text-align:right;height:14px;line-height:14px}
+
+#f1-logo img {height:14px;padding:3px 0;}
+
+@media screen and (max-width: 640px) {
+#f0-box{display: block;padding:10px 5px;}
+#f1-box{display: block;padding:0px 5px;}
+#f1-copy{margin:10px;text-align:center;}
+#f1-logo{margin:10px;text-align:center;}
+#f0-box dl{padding-top:15px;}
+}
+</style>
+<div id="f0-page">
+<div id="f0-box">
+	
+			<div id="f0-help">
+				<dl>
+					<dt><span class="h-black">帮助</span></dt>			
+					<dd><a href="/pages/mt4error.html"   title="mt4error" >错误代码释义(mt4error)</a></dd>
+					<dd><a href="/pages/mt5error.html"   title="mt5error" >错误代码释义(mt5error)</a></dd>
+					<dd><a href="/pages/function.html"   title="常用函数" >mql常用函数说明</a></dd>
+
+				</dl>								
+			</div>
+			
+			<div id="f0-about">					
+				<dl>		
+				<dt><span class="h-black">关于</span></dt>	
+					<dd>&nbsp;提高认知&nbsp;&nbsp;总结方法&nbsp;&nbsp;反复实践</dd>
+					<dd>&nbsp;风控第一&nbsp;&nbsp;以守为攻&nbsp;&nbsp;步步为营</dd>
+					<dd>&nbsp;知识分享&nbsp;&nbsp;经验交流&nbsp;&nbsp;策略试验</dd>
+				</dl>
+			</div>	
+			
+			<div id="f0-group">	
+				<div>		
+					<dl>		
+						<dt><span class="h-black">联系</span></dt>
+						<dd>Q<span style="padding-left:3px;">&nbsp;&nbsp;:&nbsp;&nbsp;168107365</span></dd>
+						<dd>群<span>&nbsp;&nbsp;:&nbsp;&nbsp;1107021071</span></dd>						
+					</dl>
+				</div>
+				<!--
+				<div  style="margin-top:6px;"><span><img border="0" src="/images/banner/1107021071.png" width="90" alt="Q群" title="Q群" /></span></div>
+				-->
+			</div>
+			
+			<div id="f0-kk">
+				<dl>		
+					<dt><span><img style="padding-top:6px;" border="0" src="/images/banner/wx_kk.png" width="90" alt="Q群" title="Q群" /></dt>				
+				</dl>				
+			</div>
+	</div>
+</div>
+<div id="f1-page">
+<div id="f1-box" >
+		<div id="f1-copy">
+			<div ><a href="/"><span >智能量化交易&nbsp;<span class="yahei">&copy;</span>&nbsp;2016-2023&nbsp;AIMQL.CN</span></a>	</div>
 		</div>
+		
+		<div id="f1-logo">
+			<div><a href="/"><img border="0" height="14" src="/images/logo/logo.svg"/></a></div>					
+		</div>
+</div>
+</div>
+        
 	</div>
 </body>
 </html>
-
