@@ -45,8 +45,9 @@ a.hover{text-decoration: underline;}
 .block{padding-right:10px;}
 .page2-c1-con dd{padding-left:10px;}
 
-#page3{width:100%;background-color:#FAFBFC;padding:90px 0 90px 0;}
+#page3{width:100%;background-color:#fff;padding:50px 0 50px 0;}
 #page3-bg{max-width:998px;margin:auto;}
+.page-title0{font-size:14px;padding-bottom:25px;}
 
 .h-logo,.h-left{height:60px;line-height:60px;}
 /**********header**********/
